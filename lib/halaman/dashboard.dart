@@ -6,14 +6,14 @@ import 'package:flutter_19552011093/source1/field/search.dart';
 import 'package:flutter_19552011093/source2/util_src2.dart';
 import 'package:flutter_19552011093/model/camera.dart';
 
-class Home extends StatefulWidget {
-  const Home({Key? key}) : super(key: key);
+class Dashboard extends StatefulWidget {
+  const Dashboard({Key? key}) : super(key: key);
 
   @override
-  State<Home> createState() => _HomeState();
+  State<Dashboard> createState() => _DashboardState();
 }
 
-class _HomeState extends State<Home> {
+class _DashboardState extends State<Dashboard> {
   List<Camera> _cameraFound = [];
 
   @override
@@ -36,9 +36,9 @@ class _HomeState extends State<Home> {
           padding: const EdgeInsets.only(right: 10, left: 10),
           child: Column(
             children: [
-              UtilConst.getSizedBoxSparator(),
-              SearchField.generate(searchCamera),
-              UtilConst.getSizedBoxSparator(),
+              Utilsrc.getSizedBoxSparator(),
+              Search.generate(searchCamera),
+              Utilsrc.getSizedBoxSparator(),
               Expanded(
                   child: ListView.builder(
                 itemCount: _cameraFound.length,

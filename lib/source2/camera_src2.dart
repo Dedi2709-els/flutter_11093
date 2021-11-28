@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'assets.dart';
 import 'package:flutter_19552011093/model/camera.dart';
 
-class CameraConts {
+class CameraSrc {
   static Camera cameraMint = Camera('Mini Mint 7+', 49.90,
       const Color.fromRGBO(112, 177, 161, 1), assets.cameraMint);
   static Camera cameraBlue = Camera('Mini Blue 7+', 50.90,
@@ -18,3 +18,5 @@ class CameraConts {
     return [cameraMint, cameraBlue, cameraCoral, cameraPink, cameraLavender];
   }
 }
+
+class $ {}

@@ -7,13 +7,13 @@ class CardCamera {
   static Card generateCard(BuildContext context, Camera camera) => Card(
         key: ValueKey(camera.type),
         shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(UtilConst.borderRadius)),
+            borderRadius: BorderRadius.circular(Utilsrc.borderRadius)),
         color: camera.color,
         elevation: 0,
         margin: const EdgeInsets.only(
-            top: UtilConst.widgetVerticalMargin,
-            bottom: UtilConst.widgetVerticalMargin,
-            right: UtilConst.cardRightMargin),
+            top: Utilsrc.widgetVerticalMargin,
+            bottom: Utilsrc.widgetVerticalMargin,
+            right: Utilsrc.cardRightMargin),
         child: CardItem.generateAll(context, camera),
       );
 }

@@ -15,7 +15,7 @@ class CardItem {
 
   static dynamic generateCardItem(var child) => Container(
         margin:
-            const EdgeInsets.symmetric(vertical: UtilConst.cardVerticalMargin),
+            const EdgeInsets.symmetric(vertical: Utilsrc.cardVerticalMargin),
         child: Align(
           alignment: Alignment.centerLeft,
           child: child,
@@ -48,7 +48,7 @@ class CardItem {
       );
 
   static dynamic getCardImage(Camera camera) => Positioned.fill(
-        right: UtilConst.overflow,
+        right: Utilsrc.overflow,
         child: Align(
           alignment: Alignment.centerRight,
           child: camera.getImage(),

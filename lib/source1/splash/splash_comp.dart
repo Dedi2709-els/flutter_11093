@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_19552011093/source2/assets.dart';
 
-class SplashComponent {
+class Splash {
   static dynamic getLogo(context) {
     return Center(
       child: Column(

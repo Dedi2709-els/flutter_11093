@@ -19,15 +19,14 @@ class _SplashState extends State<SplashScreen> {
   _navigatetohome() async {
     await Future.delayed(const Duration(seconds: 10), () {});
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => const Home()));
+        context, MaterialPageRoute(builder: (context) => const Dashboard()));
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Stack(alignment: Alignment.bottomCenter, children: [
-      SplashComponent.getLogo(context),
-      SplashComponent.getFooter()
-    ]));
+        body: Stack(
+            alignment: Alignment.bottomCenter,
+            children: [Splash.getLogo(context), Splash.getFooter()]));
   }
 }

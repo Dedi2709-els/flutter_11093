@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_19552011093/source2/util_src2.dart';
 
-class SearchField {
+class Search {
   static dynamic generate(var searchFunction) => TextField(
         onChanged: searchFunction,
         style: const TextStyle(
@@ -11,7 +11,7 @@ class SearchField {
             fillColor: Colors.black,
             filled: true,
             border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(UtilConst.borderRadius)),
+                borderRadius: BorderRadius.circular(Utilsrc.borderRadius)),
             hintText: 'Search',
             hintStyle: const TextStyle(color: Colors.grey)),
       );

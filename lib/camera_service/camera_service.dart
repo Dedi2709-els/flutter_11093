@@ -3,7 +3,7 @@ import 'package:flutter_19552011093/model/camera.dart';
 
 class CameraService {
   static List<Camera> findAll([String keyword = ""]) {
-    List<Camera> cameraList = CameraConts.getAll();
+    List<Camera> cameraList = CameraSrc.getAll();
 
     if (keyword.isEmpty) {
       return cameraList;

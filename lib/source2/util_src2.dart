@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-class UtilConst {
+class Utilsrc {
   static const borderRadius = 15.0;
   static const cardVerticalMargin = 5.0;
   static const overflow = -35.0;

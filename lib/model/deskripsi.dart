@@ -16,7 +16,7 @@ class Description {
     Align parent;
 
     if (title == 'blank') {
-      return UtilConst.getSizedBoxSparator(25);
+      return Utilsrc.getSizedBoxSparator(25);
     } else if (title == 'image') {
       return Padding(
         padding: const EdgeInsets.only(bottom: 25),
@@ -46,12 +46,12 @@ class Description {
     return Column(
       children: [
         parent,
-        UtilConst.getSizedBoxSparator(10.0),
+        Utilsrc.getSizedBoxSparator(10.0),
         Text(
           text,
           style: const TextStyle(fontSize: 12),
         ),
-        UtilConst.getSizedBoxSparator(10.0),
+        Utilsrc.getSizedBoxSparator(10.0),
       ],
     );
   }

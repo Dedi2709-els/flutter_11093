@@ -13,7 +13,7 @@ class Button {
   }) =>
       Container(
         margin:
-            const EdgeInsets.symmetric(vertical: UtilConst.cardVerticalMargin),
+            const EdgeInsets.symmetric(vertical: Utilsrc.cardVerticalMargin),
         child: Align(
           alignment: Alignment.centerLeft,
           child: TextButton(
@@ -31,7 +31,7 @@ class Button {
                   backgroundColor: backgroundColor,
                   shape: RoundedRectangleBorder(
                       borderRadius:
-                          BorderRadius.circular(UtilConst.borderRadius))),
+                          BorderRadius.circular(Utilsrc.borderRadius))),
               child: Text(
                 Messages.buy,
                 style: TextStyle(color: fontColor),
