@@ -1,6 +1,6 @@
 import 'package:flutter_19552011093/model/deskripsi.dart';
 
-class DescriptionConst {
+class Descriptionsrc {
   static Description blank = Description(title: "blank", text: "");
   static Description image = Description(title: "image", text: "");
   static Description deskripA = Description(
